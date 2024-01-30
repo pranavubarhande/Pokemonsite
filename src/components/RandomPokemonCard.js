@@ -32,7 +32,6 @@ const RandomPokemonCard = () => {
   )
 
   useEffect(() => {
-    // localStorage.removeItem('pokemon')
     if (randomPokemon) {
       return
     }

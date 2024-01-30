@@ -5,7 +5,6 @@ const DetailsPage = () => {
   const location = useLocation()
   
   const { name, sprites, types, moves } = location.state.pokemon;
-  console.log(types)
   return (
     <div className="pokemon-details-container">
       <div className="images-container">
