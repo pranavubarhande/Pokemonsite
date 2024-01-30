@@ -1,35 +1,43 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-
+import './styles.css'
 const DetailsPage = () => {
   const location = useLocation()
-  console.log(location.state)
+  
+  const { name, sprites, types, moves } = location.state.pokemon;
+  console.log(types)
   return (
-    <div
-      style={{
-        display: 'flex',
-        marginLeft: '30%',
-        flexDirection: 'column',
-        alignSelf: 'center',
-        alignItems: 'center',
-        border: '1px solid black',
-        padding: 30,
-        marginTop: 30,
-        borderRadius: 20,
-        maxWidth: '30%'
-      }}
-    >
-      <h1>Pokemon Details</h1>
-      <img
-        src={location.state.pokemon.sprites.front_default}
-        alt={location.state.pokemon.name}
-      />
-      <h2>Name: {location.state.pokemon.name}</h2>
+    <div className="pokemon-details-container">
+      <div className="images-container">
+        <div className="card-body">
+          <div className={` rounded text-center mb-1 w-100 d-flex flex-column g-3`}>
+            <div style={{ minWidth: "20rem" }} className="fs-1 fw-bolder">
+              <h1 className="text-capitalize">{name}</h1>
+            </div>
+            <div className="fs-3 fw-bold m-0">
+              <h3>Height: {Math.round(location.state.pokemon.height * 3.93)}cm</h3>
+            </div>
+            <div className="fs-3 fw-bold m-0">
+              <h3>Weight: {Math.round(location.state.pokemon.weight * 0.22)}lbs</h3>
+            </div>
+            <div style={{display:'flex', justifyContent:'center'}}>
+              <h3>Type: {types[0].type.name}</h3>
+            </div>
+          </div>
+          
+          <img style={{ width: "20rem"}} src={sprites.other.home.front_default} alt="Pokemon" />
+          <div className="images-row">
+            <div className="d-flex d-flex-column justify-content-center align-items-center">
+              <img style={{ width: "20rem" }} src={sprites.front_default} alt="Front profile" />
+            </div>
+            <div className="d-flex d-flex-column justify-content-center align-items-center">
+              <img style={{ width: "20rem" }} src={sprites.back_default} alt="Back profile" />
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <h2>Pokemon Abilities</h2>
-      {location.state.pokemon.abilities.map((item, index) => {
-        return <p key={index}>{item.ability.name}</p>
-      })}
+      
     </div>
   )
 }

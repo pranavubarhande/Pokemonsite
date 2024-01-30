@@ -1,0 +1,339 @@
+.pokemon-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-y: auto; /* Add this to enable vertical scrolling */
+  max-height: 100vh;
+  padding: 100px;
+}
+
+.images-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.fs-1 {
+  font-size: 2.5rem;
+}
+
+.fs-3 {
+  font-size: 1.5rem;
+}
+
+.fs-4 {
+  font-size: 1.2rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.images-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.types-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.moves-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.my-2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.moves-list {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.moves-list button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.bug1 {
+  background: radial-gradient(
+    circle,
+    rgba(170, 187, 34, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+}
+
+.grass1 {
+  background: radial-gradient(
+    circle,
+    rgba(119, 204, 85, 1) 50%,
+    rgb(0, 212, 255) 100%
+  );
+  color: #fff;
+}
+
+.water1 {
+  background: radial-gradient(
+    circle,
+    rgba(51, 153, 255, 1) 50%,
+    /* rgb(9, 9, 121) 50%, */ rgb(0, 212, 255) 100%
+  );
+}
+
+.fire1 {
+  background: radial-gradient(
+    circle,
+    rgba(255, 68, 34, 1) 50%,
+    rgb(0, 212, 255) 100%
+  );
+  /* color: #fff; */
+}
+
+.normal1 {
+  background: radial-gradient(
+    circle,
+    rgba(170, 170, 153, 1) 50%,
+    rgb(0, 212, 255) 100%
+  );
+  /* color: #fff; */
+}
+
+.rock1 {
+  background: radial-gradient(
+    circle,
+    rgba(184, 160, 56, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.ground1 {
+  background: radial-gradient(
+    circle,
+    rgba(224, 192, 104, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.psychic1 {
+  background: radial-gradient(
+    circle,
+    rgba(198, 44, 198, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.fighting1 {
+  background: radial-gradient(
+    circle,
+    rgba(187, 85, 68, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.electric1 {
+  background: radial-gradient(
+    circle,
+    rgba(255, 217, 0, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.poison1 {
+  background: radial-gradient(
+    circle,
+    rgba(170, 85, 153, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.flying1 {
+  background: radial-gradient(
+    circle,
+    rgba(136, 153, 255, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.fairy1 {
+  background: radial-gradient(
+    circle,
+    rgba(238, 153, 238, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+.dragon1 {
+  background: radial-gradient(
+    circle,
+    rgba(112, 56, 248, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+.steel1 {
+  background: radial-gradient(
+    circle,
+    rgba(170, 170, 187, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+.dark1 {
+  background: radial-gradient(
+    circle,
+    rgba(62, 62, 62, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: #fff;
+}
+.ghost1 {
+  background: radial-gradient(
+    circle,
+    rgba(102, 102, 187, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+.ice1 {
+  background: radial-gradient(
+    circle,
+    rgba(152, 216, 216, 1) 50%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  /* color: #fff; */
+}
+
+/* BACKGROUND COLORS */
+
+.grass {
+  background-color: #77cc55;
+}
+.bug {
+  background-color: #ab2;
+}
+.water {
+  background-color: #3399ff;
+}
+
+.fire {
+  background-color: #ff4422;
+}
+
+.normal {
+  background-color: #aaaa99;
+}
+
+.rock {
+  background-color: #b8a038;
+}
+
+.ground {
+  background-color: #f2c068;
+}
+
+.psychic {
+  background-color: #c62cc6;
+}
+
+.fighting {
+  background-color: #b54;
+}
+
+.electric {
+  background-color: #ffd900ec;
+}
+
+.poison {
+  background-color: #a59;
+}
+
+.flying {
+  background-color: #89f;
+}
+
+.fairy {
+  background-color: #e9e;
+}
+
+.dragon {
+  background-color: #1299cf;
+}
+
+.ghost {
+  background-color: #6666bb;
+}
+
+.ice {
+  background-color: #6cf;
+  /* background-color: #98D8D8 */
+}
+
+.dark {
+  background-color: #3e3e3e;
+  color: #fff;
+}
+
+.steel {
+  background-color: #aaaabb;
+}

@@ -77,6 +77,7 @@ const RandomPokemonCard = () => {
           <img
             src={randomPokemon.sprites.front_default}
             alt={randomPokemon.name}
+            style={{ width: "20rem"}}
           />
           <h3>Name: {randomPokemon.name}</h3>
         </div>
