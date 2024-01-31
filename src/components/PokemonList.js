@@ -44,6 +44,8 @@ const PokemonList = () => {
                 alignItems: 'center',
                 borderRadius: 20,
                 marginBottom: 30,
+                marginLeft:10,
+                marginRight:10
               }}
             >
               <img

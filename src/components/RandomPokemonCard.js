@@ -39,6 +39,8 @@ const RandomPokemonCard = () => {
     axios.get(`https://pokeapi.co/api/v2/pokemon/${number}`).then(response => {
       setRandomPokemon(response.data)
       setWithExpiry('pokemon', response.data, 1440)
+    }).catch(err => {
+      alert(err)
     })
   }, [])
   const navigate = useNavigate()
