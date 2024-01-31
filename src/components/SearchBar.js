@@ -6,7 +6,6 @@ import Loader from './Loader';
 const SearchBar = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [suggestions, setSuggestions] = useState([]);
-  // const pokemonNames = ['bulbasaur', 'ivysaur', 'venusaur', /*... and so on */];
   const [pokemonNames,setPokemonNames] = useState([]);
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate()
@@ -14,7 +13,6 @@ const SearchBar = () => {
     const inputValue = e.target.value.toLowerCase();
     setSearchTerm(inputValue);
 
-    // Filter Pokemon names based on the typed input
     const filteredSuggestions = pokemonNames.filter((pokemon) =>
       pokemon.name.toLowerCase().includes(inputValue)
     );
@@ -23,15 +21,13 @@ const SearchBar = () => {
   };
   const handleSuggestionClick = (suggestion) => {
     setSearchTerm(suggestion);
-    setSuggestions([]); // Clear suggestions after selection
+    setSuggestions([]); 
   };
 
   useEffect(() => {
     axios.get(`https://pokeapi.co/api/v2/pokemon?limit=10000`).then(response => {
         setPokemonNames(response.data.results);
-        // setLoading(false);
       }).catch(err => {
-        // setLoading(false);
       })
   }, [])
   

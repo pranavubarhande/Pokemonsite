@@ -1,4 +1,3 @@
-// PokemonList.js
 import React, { useState } from 'react';
 import Loader from './Loader';
 import usePokemonList from '../hooks/usePokemonList';

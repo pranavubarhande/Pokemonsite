@@ -1,4 +1,3 @@
-// usePokemonSearch.js
 import { useState, useEffect } from 'react';
 import { useQuery } from 'react-query';
 import axios from 'axios';

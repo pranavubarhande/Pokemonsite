@@ -8,7 +8,7 @@ const Loader = () => {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        zIndex: 9999, // Set a high z-index to ensure it's above other elements
+        zIndex: 9999, 
       }}
     >
       <div
